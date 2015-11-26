@@ -14,9 +14,9 @@ For this lab you will be implementing all of the functionality from scratch, inc
 
 Below is what will be needed for each component of the MVC structure:
 
-* **Models** - Create a `SchoolClass` and `Student` model, along with their associated database tables. The `SchoolClass` table should have the columns: `title:string` and `room_number:integer`. The `Student` model should have the columns: `first_name` and `last_name`.
+* **Models** - Create a `SchoolClass` model, along its associated database table. The `SchoolClass` table should have the columns: `title:string` and `room_number:integer`. The `Student` model and database table have already been created for you.
 
-* **Controllers** - Build out the `new`, `create`, `show`, `edit`, and `update` actions in each of the controllers.
+* **Controllers** - Create controller files for `school_classes` and `students`. Build out the `new`, `create`, `show`, `edit`, and `update` actions in each of the controllers.
 
 * **Views** - Create a show page for each resource, along with `new` and `edit` forms.
 

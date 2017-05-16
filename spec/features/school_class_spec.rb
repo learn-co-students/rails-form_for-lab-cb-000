@@ -19,9 +19,9 @@ describe 'form page' do
   end
 
   it 'edit form submits content and renders form content' do
-    @edit_school_class = SchoolClass.create(title: "Computer Science", room_number: 5)
+    school_class = create(:school_class)
 
-    visit edit_school_class_path(@edit_school_class)
+    visit edit_school_class_path(school_class)
 
     fill_in 'school_class_title', with: "Risk Analysis"
     fill_in 'school_class_room_number', with: 10

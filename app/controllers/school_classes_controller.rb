@@ -5,7 +5,7 @@ def index
 end
 
 def create
-  @school_class = SchoolClass.new(title: params[:school_class][:title], room_number: params[:school_class][:room_number])
+  @school_class = SchoolClass.new(school_class_params)
   @school_class.save
 
   redirect_to school_class_path(@school_class)

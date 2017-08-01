@@ -1,0 +1,7 @@
+<% if !@students.empty? %>
+  <% @students.each do |student| %>
+    <%= link_to student.to_s, student_path(student.id) %> <br>
+  <% end %>
+<% else %>
+Students list is empty
+<% end %>

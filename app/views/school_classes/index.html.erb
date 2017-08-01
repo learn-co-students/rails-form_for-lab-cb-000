@@ -1,0 +1,7 @@
+<% if !@schoolClasses.empty? %>
+  <% @schoolClasses.each do |schoolClass| %>
+    <%= link_to schoolClass.title, school_class_path(schoolClass) %><br>
+  <% end %>
+<% else %>
+  Shool classes list is empty
+<% end %>

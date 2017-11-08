@@ -9,10 +9,8 @@ describe 'form page' do
 
   it 'new form submits content and renders form content' do
     visit new_school_class_path
-
     fill_in 'school_class_title', with: "Software Engineering"
     fill_in 'school_class_room_number', with: 10
-
     click_on "Create School class"
 
     expect(page).to have_content("Software Engineering")
@@ -22,10 +20,8 @@ describe 'form page' do
     @edit_school_class = SchoolClass.create(title: "Computer Science", room_number: 5)
 
     visit edit_school_class_path(@edit_school_class)
-
     fill_in 'school_class_title', with: "Risk Analysis"
     fill_in 'school_class_room_number', with: 10
-
     click_on "Update School class"
 
     expect(page).to have_content("Risk Analysis")
@@ -33,10 +29,8 @@ describe 'form page' do
 
   it 'submitted new form creates a record in the database' do
     visit new_school_class_path
-
     fill_in 'school_class_title', with: "Sabermetrics"
     fill_in 'school_class_room_number', with: 42
-
     click_on "Create School class"
 
     expect(SchoolClass.last.title).to eq("Sabermetrics")
@@ -46,10 +40,8 @@ describe 'form page' do
     @edit_db_school_class = SchoolClass.create(title: "Computer Science", room_number: 5)
 
     visit edit_school_class_path(@edit_db_school_class)
-
     fill_in 'school_class_title', with: "Machine Learning"
     fill_in 'school_class_room_number', with: 11
-
     click_on "Update School class"
 
     expect(SchoolClass.last.title).to eq("Machine Learning")

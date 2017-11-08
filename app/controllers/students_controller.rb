@@ -9,6 +9,9 @@ class StudentsController < ApplicationController
   end
 
   def new
+    @student = Student.new(params[:student])
+
+
   end
 
   def create
@@ -20,6 +23,7 @@ class StudentsController < ApplicationController
   end
 
   def edit
+    @student = Student.find(params[:id])
   end
 
   def update

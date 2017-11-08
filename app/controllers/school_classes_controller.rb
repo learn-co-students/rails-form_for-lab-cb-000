@@ -8,17 +8,17 @@ class SchoolClassesController < ApplicationController
   def show
     @school_class = SchoolClass.find(params[:id])
 
-    
+
   end
 
   def new
   end
 
   def create
-    @student = Student.new
-    @student.first_name = params[:first_name]
-    @student.last_name = params[:last_name]
-    @student.save
+    @school_class = SchoolClass.new
+    @school_class.first_name = params[:first_name]
+    @school_class.last_name = params[:last_name]
+    @school_class.save
   end
 
   def edit

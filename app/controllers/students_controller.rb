@@ -21,7 +21,7 @@ class StudentsController < ApplicationController
   def edit
   end
 
-  def update
+  def update 
   end
 
 

@@ -1,9 +1,21 @@
 class SchoolClassesController < ApplicationController
 
   def new
+    # dont really understand why this
     @schoolclass = SchoolClass.new
 
   end
+
+  def show
+    @schoolclass = SchoolClass.find(params[:id])
+
+  end
+
+  def edit
+		# @post = Post.find(params[:id])
+    @schoolclass = SchoolClass.find(params[:id])
+
+	end
 
 def create
   @schoolclass = SchoolClass.new(schoolclass_params(:title, :number))

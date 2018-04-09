@@ -2,6 +2,7 @@ class StudentsController < ApplicationController
 
   def new
     # dont really understand why this
+    # something to do with the form needing it to recongize whats going on
     @student = Student.new
 
   end

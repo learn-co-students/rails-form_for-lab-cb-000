@@ -1,2 +1,11 @@
-<h1>SchoolClasses#new</h1>
-<p>Find me in app/views/school_classes/new.html.erb</p>
+<%= form_for @school_class do |f| %>
+
+  <%= label_tag :school_class_title, "Class title:" %><br>
+  <%= f.text_field :title %><br>
+
+  <%= label_tag :school_class_room_number, "Class room number:" %><br>
+  <%= f.text_field :room_number %><br>
+
+  <%= f.submit %>
+
+<% end %>

@@ -1,0 +1,7 @@
+<h1>Students</h1>
+
+<%= div_for @students do |student| %>
+  <%= link_to student do  %>
+    <%= content_tag :p, student.to_s %>
+  <% end %>
+<% end %>

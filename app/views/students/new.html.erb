@@ -1,3 +1,5 @@
+<%= content_tag :h1, "Edit Student Form" %>
+
 <%= form_for @student do |s| %>
   <%= label_tag :student_first_name, "Student first name:" %><br>
   <%= s.text_field :first_name %><br>

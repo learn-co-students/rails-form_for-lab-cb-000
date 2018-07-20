@@ -1,0 +1,8 @@
+<h1>Student Index Form</h1>
+<% @students.each do |student| %>
+  <div><%= link_to student.to_s, student_path(student) %></div>
+<% end %>
+
+<%= form_tag new_student_path, method: :get do %>
+  <%= submit_tag "New Student" %>
+<% end %>

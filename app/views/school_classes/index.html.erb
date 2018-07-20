@@ -1,0 +1,8 @@
+<h1>School Classes Index Form</h1>
+<% @school_classes.each do |school_class| %>
+  <div><%= link_to school_class.title, school_class_path(school_class) %>: Room <%= school_class.room_number %></div>
+<% end %>
+
+<%= form_tag new_school_class_path, method: :get do %>
+  <%= submit_tag "New School Class" %>
+<% end %>

@@ -1,0 +1,7 @@
+
+<h1>School Class: <%= @school_class.title %></h1>
+<h3>Room: <%= @school_class.room_number %></h3>
+
+<%= form_tag edit_school_class_path, method: :get do %>
+  <%= submit_tag "Edit School Class" %>
+<% end %>

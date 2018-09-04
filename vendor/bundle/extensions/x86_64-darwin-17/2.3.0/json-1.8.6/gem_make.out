@@ -1,0 +1,13 @@
+current directory: /Users/lizjen/Development/code/rails-form_for-lab-cb-000/vendor/bundle/gems/json-1.8.6/ext/json
+/Users/lizjen/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20180903-44623-kd01vd.rb extconf.rb
+creating Makefile
+
+current directory: /Users/lizjen/Development/code/rails-form_for-lab-cb-000/vendor/bundle/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/lizjen/Development/code/rails-form_for-lab-cb-000/vendor/bundle/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/lizjen/Development/code/rails-form_for-lab-cb-000/vendor/bundle/gems/json-1.8.6/ext/json
+make "DESTDIR=" install

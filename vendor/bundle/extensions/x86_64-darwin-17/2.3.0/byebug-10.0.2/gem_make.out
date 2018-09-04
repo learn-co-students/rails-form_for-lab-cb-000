@@ -1,0 +1,19 @@
+current directory: /Users/lizjen/Development/code/rails-form_for-lab-cb-000/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+/Users/lizjen/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20180903-44623-1przmky.rb extconf.rb
+creating Makefile
+
+current directory: /Users/lizjen/Development/code/rails-form_for-lab-cb-000/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/lizjen/Development/code/rails-form_for-lab-cb-000/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling breakpoint.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/lizjen/Development/code/rails-form_for-lab-cb-000/vendor/bundle/gems/byebug-10.0.2/ext/byebug
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 byebug.bundle ./.gem.20180903-44623-qte56z/byebug

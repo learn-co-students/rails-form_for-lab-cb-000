@@ -1,0 +1,21 @@
+<h1>Update Student</h1>
+
+<%= form_for @student do |f| %>
+  <%= f.label "First Name:" %>
+  <%= f.text_field "first_name" %>
+  <br>
+  <%= f.label "Last Name:" %>
+  <%= f.text_field "last_name" %>
+  <br>
+  <%= f.submit "Update Student" %>
+<% end %>
+
+<br>
+<br>
+<%= form_tag new_student_path, method: 'get' do %>
+  <%= submit_tag "Add New Student" %>
+<% end %>
+
+<%= form_tag school_classes_path, method: 'get' do %>
+  <%= submit_tag "Go To School's Classes" %>
+<% end %>

@@ -1,0 +1,16 @@
+<h1> Here is a list of all the School's Classes </h1>
+
+<% @school_class.each do |classes| %>
+  <div style="border: solid">
+    <p> Title: <%= link_to classes.title, school_class_path(classes) %></p>
+    <p>Room Number: <%= classes.room_number %></p>
+  </div>
+<% end %>
+
+<%= form_tag new_school_class_path, method: 'get' do %>
+  <%= submit_tag "Create New School Class" %>
+<% end %>
+
+<%= form_tag students_path, method: 'get' do %>
+  <%= submit_tag "Go To Students" %>
+<% end %>

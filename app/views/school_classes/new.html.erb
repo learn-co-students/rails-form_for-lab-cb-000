@@ -1,0 +1,23 @@
+<h1>School Class Form!</h1>
+
+<%= form_for(@school_class) do |f| %>
+  <%= f.label "Title:" %>
+  <%= f.text_field "title" %>
+  <br>
+
+  <%= f.label "Room Number:" %>
+  <%= f.text_field "room_number" %>
+  <br>
+
+  <%= f.submit "Create School class" %>
+<% end %>
+
+<br>
+<br>
+<%= form_tag school_classes_path, method: 'get' do %>
+  <%= submit_tag "Go To School's Classes" %>
+<% end %>
+
+<%= form_tag students_path, method: 'get' do %>
+  <%= submit_tag "Go To Students" %>
+<% end %>

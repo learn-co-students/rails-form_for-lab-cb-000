@@ -1,0 +1,17 @@
+<h1><%= @student.first_name %></h1>
+<h1><%= @student.last_name %></h1>
+
+<%= form_tag edit_student_path, method: "get" do %>
+  <%= submit_tag "Edit Student" %>
+<% end %>
+
+<br>
+<br>
+
+<%= form_tag students_path, method: "get" do %>
+  <%= submit_tag "Go To Students" %>
+<% end %>
+
+<%= form_tag school_classes_path, method: "get" do %>
+  <%= submit_tag "Go To School Classes" %>
+<% end %>

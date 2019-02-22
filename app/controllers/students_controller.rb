@@ -14,6 +14,8 @@ class StudentsController < ApplicationController
   end
 
   def create
+    @student = Student.create(first_name: params[:student_first_name], last_name: params[:student_last_name])
+    redirect_to student_path(@student)
   end
 
   def show
@@ -28,6 +30,8 @@ class StudentsController < ApplicationController
     # binding.pry
     @student = Student.find(params[:id])
     @student.update(params.require(:student))
+    @student.save
+    redirect_to student_path(@student)
   end
 
 end

@@ -1,3 +1,4 @@
+require 'pry'
 class SchoolClassesController < ApplicationController
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
@@ -12,6 +13,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
+    # binding.pry
     @school_class =  SchoolClass.create(title: params[:school_class_title], room_number: params[:school_class_room_number].to_i)
     redirect_to school_class_path(@school_class)
   end

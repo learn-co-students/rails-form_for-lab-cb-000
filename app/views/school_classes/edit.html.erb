@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Class</title>
+  </head>
+  <body>
+    <%= form_for(@school_class) do |f| %>
+      <label>First Name: </label> <br>
+      <%= f.text_field :title %> <br>
+
+      <label>Last Name: </label> <br>
+      <%= f.text_field :room_number %>
+
+      <%= f.submit "Update School class"%>
+    <% end %>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Student</title>
+  </head>
+  <body>
+    <%= form_for(@student) do |f| %>
+      <label>First Name: </label> <br>
+      <%= f.text_field :first_name %> <br>
+
+      <label>Last Name: </label> <br>
+      <%= f.text_field :last_name %>
+
+      <%= f.submit "Update Student"%>
+    <% end %>
+  </body>
+</html>

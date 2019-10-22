@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Students</title>
+  </head>
+  <body>
+    <% @students.each do |student| %>
+      <h3><%= student.to_s %></h3>
+    <% end %>
+  </body>
+</html>
